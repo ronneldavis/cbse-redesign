@@ -1,0 +1,107 @@
+<!doctype html>
+<html>
+	<head>
+		<link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300,600' rel='stylesheet' type='text/css'>
+		<meta http-equiv="Content-Type" content="text/html;charset=utf-8">
+		<style>
+			html, body{
+				margin: 0;
+				height: 100%;
+				width: 100%;
+				color: white;
+				font-family: 'Open Sans', sans-serif;
+				position: relative;
+			}
+			#background{
+				height: 100%;
+				width: 100%;
+				z-index: 0;
+				position: fixed;
+				background:  url(http://mattersindia.com/wp-content/uploads/2013/04/indian-students-on-visa1.jpg) no-repeat center center fixed;
+				-webkit-background-size: cover;
+				-moz-background-size: cover;
+				-o-background-size: cover;
+				background-size: cover;
+				filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='.http://mattersindia.com/wp-content/uploads/2013/04/indian-students-on-visa1.jpg', sizingMethod='scale');
+				-ms-filter: "progid:DXImageTransform.Microsoft.AlphaImageLoader(src='http://mattersindia.com/wp-content/uploads/2013/04/indian-students-on-visa1.jpg', sizingMethod='scale')";
+			}
+			#gradient{
+				height: 100%;
+				width: 100%;
+				z-index: 1;
+				position: fixed;
+				background: -moz-linear-gradient(left, rgba(0,0,0,0.65) 0%, rgba(0,0,0,0) 100%); /* FF3.6+ */
+				background: -webkit-gradient(linear, left top, right top, color-stop(0%,rgba(0,0,0,0.65)), color-stop(100%,rgba(0,0,0,0))); /* Chrome,Safari4+ */
+				background: -webkit-linear-gradient(left, rgba(0,0,0,0.65) 0%,rgba(0,0,0,0) 100%); /* Chrome10+,Safari5.1+ */
+				background: -o-linear-gradient(left, rgba(0,0,0,0.65) 0%,rgba(0,0,0,0) 100%); /* Opera 11.10+ */
+				background: -ms-linear-gradient(left, rgba(0,0,0,0.65) 0%,rgba(0,0,0,0) 100%); /* IE10+ */
+				background: linear-gradient(to right, rgba(0,0,0,0.65) 0%,rgba(0,0,0,0) 100%); /* W3C */
+				filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#a6000000', endColorstr='#00000000',GradientType=1 ); /* IE6-9 */
+			}
+			.header{
+				position: fixed;
+				z-index: 2;
+				color: white;
+				font-weight: 600;
+				font-size: 30px;
+				margin: 30px;
+				line-height: 50px;
+			}
+			#logo{
+				float: left;
+				height: 100px;
+				margin-right: 50px;
+			}
+			.centered{
+				color: #fff;
+				font-weight: 300;
+				font-size: 44px;
+				z-index: 2;
+				position: fixed;
+				top: 50%;
+				padding-left: 30px;
+			}
+			.footer{
+				z-index: 2;
+				position: fixed;
+				bottom: 20px;
+				left: 20px;
+			}
+			.button{
+				background: white;
+				color: #333;
+				width: 150px;
+				height: 50px;
+				text-align: center;
+				line-height: 50px;
+				float: left;
+				margin: 10px;
+			}
+		</style>
+	</head>
+	<body>
+		<div id="background"></div>
+		<div id="gradient"></div>
+		
+		<div class='header'>
+			<img src="logo.png" id="logo" />
+			Central Board of Secondary Education<br/>
+			केन्द्रीय माध्यमिक शिक्षा बोर्ड
+		</div>
+		<div class='centered'>
+			<div style=" position: relative; margin-top: -25%">
+				21 countries<br />
+				More than 10,000 students<br />
+				Over 12 million students<br />
+				<br />
+				Welcome to CBSE
+			</div>
+		</div>
+		<div class='footer'>
+			<a href = "http://cbse.nic.in/welcome.htm" ><div class='button'>Public Portal</div></a>
+			<a href = "http://cbseaff.nic.in/cbse_aff/welcome.aspx" ><div class='button'>e-Affiliation</div></a>
+			<a href = "http://cbseresults.nic.in" ><div class='button'>Results</div></a>
+			<a href = "http://www.cbseacademic.in" ><div class='button'>Academics</div></a>
+		</div>
+	</body>
+</html>
